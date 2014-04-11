@@ -450,6 +450,9 @@ class MemberProfilePage_Controller extends Page_Controller {
 		$form = $this->ProfileForm();
 		$form->loadDataFrom($member);
 
+		// custom hook
+		$this->extend('updateIndexProfileForm', $form);
+
 		if($password = $form->Fields()->fieldByName('Password')) {
 			$password->setCanBeEmpty(false);
 			$password->setValue(null);
