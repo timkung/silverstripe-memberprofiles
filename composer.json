@@ -6,16 +6,13 @@
 	"license": "BSD-3-Clause",
 	"authors": [
 		{
-			"name": "Andrew Short",
-			"email": "andrewjshort@gmail.com"
+			"name": "Tim Kung",
+			"email": "tim@stripetheweb.com"
 		}
 	],
 	"require": {
 		"silverstripe/framework": "3.*",
 		"silverstripe/cms": "3.*"
-	},
-	"suggest": {
-		"ajshort/silverstripe-gridfieldextensions": "Allows drag-and-drop reordering of fields"
 	},
 	"replace": {
 		"silverstripe/memberprofiles": "*"
