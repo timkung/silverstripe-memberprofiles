@@ -492,8 +492,8 @@ class MemberProfilePage_Controller extends Page_Controller {
 			new MemberProfileValidator($this->Fields())
 		);
 
-		if(class_exists('SpamProtectorManager')) {
-			SpamProtectorManager::update_form($form);
+		if(class_exists('FormSpamProtectionExtension')) {
+			$form->enableSpamProtection();
 		}
 		$this->extend('updateRegisterForm', $form);
 		return $form;
